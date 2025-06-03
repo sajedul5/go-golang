@@ -14,6 +14,15 @@ func main() {
 		fmt.Println("Sum:", c)
 	}(10, 20) // This is an anonymous function that adds two numbers and prints the result.
 
+	// Assigning an anonymous function to a variable
+	// This allows us to call the function later using the variable name.
+	add := func(a , b int) {
+		c := a + b
+		fmt.Println("Sum:", c)
+	}
+
+	add(30, 20) // Calling the anonymous function assigned to the variable 'add'
+
 	
 }
 
